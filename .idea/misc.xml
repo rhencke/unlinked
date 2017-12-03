@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://yiff.io/unlinked/index" location="$PROJECT_DIR$/index.xsd" />
+  </component>
+  <component name="XSLT-Support.FileAssociationsManager">
+    <file url="file://$PROJECT_DIR$/index.xsl">
+      <association url="file://$PROJECT_DIR$/index.xml" />
+      <association url="file://$PROJECT_DIR$/index.xsd" />
+    </file>
+  </component>
+</project>

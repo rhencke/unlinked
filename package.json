@@ -1,0 +1,20 @@
+{
+  "name": "unlinked",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "auto-reload-brunch": "^2.7.1",
+    "brunch": "^2",
+    "brunch-static": "^1",
+    "html-brunch-static": "^1",
+    "puer": "^1.1.4",
+    "pug-brunch-static": "^2",
+    "sass-brunch": "^2.10.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

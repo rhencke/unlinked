@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('fonts/SourceSansPro-Regular.otf.woff2') format('woff2');
+}
+body {
+	margin: 0;
+	font-family: "Source Sans Pro";
+}
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #283e4a;
+	color: white;
+	&>nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 1128px;
+	}
+}
+#navlogo {
+	flex-grow: 1;
+}
+#navsections {
+	display: flex;
+	input[type=radio] {
+		display: none;
+		&:checked + label {
+			color: white;
+			box-shadow: inset 0px -2px 0px 0px white;
+		}
+	}
+	label {
+		font-size: 13px;
+		padding: 2px;
+		transition: color .3s, box-shadow .2s;
+		color: rgb(199, 209, 216);
+		width: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:hover {
+			color: white;
+		}
+	}
+}

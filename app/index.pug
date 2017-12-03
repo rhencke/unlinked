@@ -1,0 +1,29 @@
+doctype html
+
+html
+	head
+		link(rel="stylesheet", href="app.css", media="all")
+		script(src="app.js")
+	body
+		header
+			nav
+				nav#navhome
+					| butts
+				nav#navsections
+					mixin navbutton(name, checked=false)
+						input(type="radio", id="navsections"+name,name="navsections", checked=checked)
+						label(for="navsections"+name)
+							block
+							=name
+					+navbutton("Home", true)
+						include icons/home.svg
+					+navbutton("My Network")
+						include icons/user.svg
+					+navbutton("Jobs")
+						include icons/portfolio.svg
+					+navbutton("Messaging")
+						include icons/mail.svg
+					+navbutton("Notifications")
+						include icons/alert.svg
+		main
+		footer

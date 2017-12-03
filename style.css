@@ -1,0 +1,95 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@namespace a url(http://yiff.io/unlinked/appearance);
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('fonts/SourceSansPro-Regular.otf.woff2') format('woff2');
+}
+
+html {
+	--navbar-height: 52px;
+	--navitem-height: 34px;
+}
+
+body,
+html {
+	display: flex;
+}
+
+header {
+	align-items: center;
+	background: #283e4a;
+	display: flex;
+	font-family: 'Source Sans Pro', serif;
+	height: var(--navbar-height);
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+header > nav {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 80px;
+	align-items: stretch;
+	justify-content: center;
+	align-content: stretch;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 8px;
+	width: 1128px;
+	height: 100%;
+}
+header > nav > input[type="radio"] {
+	display: none;
+}
+header > nav > label {
+	color: rgb(199, 209, 216);
+	display: grid;
+	align-items: flex-end;
+	justify-content: center;
+	width: 80px;
+	padding: 4px;
+	transition: color .3s, box-shadow .2s;
+}
+header > nav > label:hover {
+	color: white;
+}
+header > nav > input[type="radio"]:checked + label {
+	color: white;
+	box-shadow: inset 0px -2px 0px 0px white;
+}
+
+/* nav > input[type=radio] {
+	display: none;
+} */
+input[type=radio]{
+	background-color: red;
+}
+nav > input[type=text] {
+	background-color: #e1e9ee;
+	border: none;
+	border-radius: 2px;
+	font-family: 'Source Sans Pro', serif;
+	line-height: var(--navitem-height);
+}
+
+/*nav label input[type=radio]:first-of-type{*/
+/*border:1px red solid;*/
+/*content: "ass";*/
+/*}*/
+header::placeholder {
+	color: #283e4a;
+}
+
+header + * {
+	padding-top: var(--navbar-height);
+}
+
+/*header > nav > label[a|icon="Notifications"]:before {
+	content: url(icons/bell.svg);
+	display: inline-block;
+	width: 50;
+}*/

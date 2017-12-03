@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="index.xsl" type="text/xsl" ?>
+<page xmlns="http://yiff.io/unlinked/index">
+	<section name="Home"/>
+	<section name="My Network"/>
+	<section name="Jobs"/>
+	<section name="Messaging"/>
+	<section name="Notifications"/>
+</page>

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('fonts/SourceSansPro-Regular.otf.woff2') format('woff2');
+}
+
+body, body * {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	display: flex;
+	flex-direction: column;
+	background: white;
+	color: black;
+	flex-wrap: nowrap;
+	font-size: 1em;
+	font-family: 'Source Sans Pro';
+}
+
+#sections input[type=radio] {
+	display: none;
+}
